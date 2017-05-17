@@ -18,7 +18,7 @@ Here’s my recommendations on what to use together with the functionality inclu
 - For tables that span across pages use [LongTable](https://www.sharelatex.com/learn/Tables#/Multi-page_tables)
 - To rotate pages for landscape tables use [pdflscape](https://www.ctan.org/pkg/pdflscape?lang=en). 
 	- This can be used together with LongTable and double sided printing to get a table that is read top to bottom across two pages.
-- To change the page margins to a specific size to conform to university regulations, or to make a long landscape oriented table look nice, use [Geometery](https://www.sharelatex.com/learn/Page_size_and_margins). 
+- To change the page margins to a specific size to conform to university regulations, or to make a long landscape oriented table look nice, use [Geometry](https://www.sharelatex.com/learn/Page_size_and_margins). 
 - A major issue can be getting figures to appear where you want them, because LaTeX floats them to a nearby spot where their size fits best with the surrounding text. To override this as needed, use [float](https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions) and the H option on your figures. Memoir’s implementation makes H do nothing and it will drive you crazy until you figure this out.
 - For figures you also may want [flafter](https://tex.stackexchange.com/questions/15706/force-floats-to-be-typeset-after-their-occurrence-in-the-source-text) to force floats to be typeset after their occurrence in the document (and not to float above).
 - To insert an existing PDF as an appendix use [pdfpages](https://www.ctan.org/pkg/pdfpages?lang=en)
