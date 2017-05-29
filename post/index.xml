@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Brian&#39;s Bytes</title>
+    <link>http://brianchristie.com/post/</link>
+    <description>Recent content in Posts on Brian&#39;s Bytes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 May 2017 18:43:34 +0200</lastBuildDate>
+    
+	<atom:link href="http://brianchristie.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing a Thesis with LaTeX in 2017</title>
+      <link>http://brianchristie.com/post/writing-a-thesis-with-latex-in-2017/</link>
+      <pubDate>Fri, 05 May 2017 18:43:34 +0200</pubDate>
+      
+      <guid>http://brianchristie.com/post/writing-a-thesis-with-latex-in-2017/</guid>
+      <description>Recently I typeset an academic thesis in LaTeX. Because LaTeX is so old, a ton of the advice online is conflicting or outdated. Here’s my notes on what worked well in May 2017. I highly recommend the excellent ShareLaTeX documentation pages to get started. Also the LaTeX WikiBook is very helpful.
+Before starting, ask around in your department to see if anyone has a LaTeX file that’s already setup to meet the requirements of your graduate college.</description>
+    </item>
+    
+  </channel>
+</rss>

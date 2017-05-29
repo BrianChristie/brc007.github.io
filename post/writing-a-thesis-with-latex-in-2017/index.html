@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Brian Christie">
+		<meta name="description" content="Links and Blog">
+		<meta name="generator" content="Hugo 0.20.7" />
+		<title>Writing a Thesis with LaTeX in 2017 &middot; Brian&#39;s Bytes</title>
+		<link rel="shortcut icon" href="http://brianchristie.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://brianchristie.com/css/style.css">
+		
+			<link rel="stylesheet" href="http://brianchristie.com/css/highlight.css">
+		
+		
+
+		
+	</head>
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://brianchristie.com/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='http://brianchristie.com/post'>Archive</a>
+	<a href='http://brianchristie.com/tags'>Tags</a>
+	<a href='http://brianchristie.com/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        Writing a Thesis with LaTeX in 2017
+                    </h1>
+                    <h2 class="headline">
+                    May 5, 2017 18:43
+                    · 496 words
+                    · 3 minutes read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="http://brianchristie.com/tags/latex">LaTeX</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<p>Recently I typeset an academic thesis in LaTeX. Because LaTeX is so old, a ton of the advice online is conflicting or outdated. Here’s my notes on what worked well in May 2017.
+I highly recommend the excellent <a href="https://www.sharelatex.com/learn">ShareLaTeX documentation pages</a> to get started. Also the <a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX WikiBook</a> is very helpful.</p>
+
+<p>Before starting, ask around in your department to see if anyone has a LaTeX file that’s already setup to meet the requirements of your graduate college. If there isn’t one then you’ll have to start from scratch.</p>
+
+<h2 id="base-document-class">Base Document Class</h2>
+
+<p>The first thing to decide is what document class to use. In 2017 there’s two main choices, <a href="http://ctan.org/pkg/memoir">Memoir</a> and <a href="http://ctan.org/pkg/koma-script">KOMA-script</a>. Here’s a StackExchange question on <a href="https://tex.stackexchange.com/questions/7742/what-are-the-strengths-and-weaknesses-of-koma-script-and-memoir?lq=1">What are the strengths and weaknesses of KOMA-Script and memoir?</a>. I used Memoir as I found it had somewhat better documentation. You could also choose to use a base LaTeX class such as book, and find a package for every single feature you need.</p>
+
+<h2 id="packages">Packages</h2>
+
+<p>A major issue with using LaTeX in 2017 is that for every single thing you want to do, there will be a minimum of 2 or 3 packages that could work, and it’s very difficult to determine which one is the “right one”. When you’re just trying to get something typeset researching this can be excruciating.</p>
+
+<p>Before you start, take a look at what packages are automatically included and emulated by Memoir (section 18.24 in the <a href="http://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf">Memoir Manual</a></p>
+
+<p>Here’s my recommendations on what to use together with the functionality included in Memoir:
+- For drawing charts and graphs, use <a href="https://www.sharelatex.com/learn/Pgfplots_package">Pgfplots</a> and <a href="https://www.sharelatex.com/learn/TikZ_package">TikZ</a>
+- For pretty tables use Booktabs.  Look at the first few pages of the <a href="http://mirror.ibcp.fr/pub/CTAN/macros/latex/contrib/booktabs/booktabs.pdf">BookTabs Manual</a>
+- For tables that span across pages use <a href="https://www.sharelatex.com/learn/Tables#/Multi-page_tables">LongTable</a>
+- To rotate pages for landscape tables use <a href="https://www.ctan.org/pkg/pdflscape?lang=en">pdflscape</a>.
+    - This can be used together with LongTable and double sided printing to get a table that is read top to bottom across two pages.
+- To change the page margins to a specific size to conform to university regulations, or to make a long landscape oriented table look nice, use <a href="https://www.sharelatex.com/learn/Page_size_and_margins">Geometry</a>.
+- A major issue can be getting figures to appear where you want them, because LaTeX floats them to a nearby spot where their size fits best with the surrounding text. To override this as needed, use <a href="https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions">float</a> and the H option on your figures. Memoir’s implementation makes H do nothing and it will drive you crazy until you figure this out.
+- For figures you also may want <a href="https://tex.stackexchange.com/questions/15706/force-floats-to-be-typeset-after-their-occurrence-in-the-source-text">flafter</a> to force floats to be typeset after their occurrence in the document (and not to float above).
+- To insert an existing PDF as an appendix use <a href="https://www.ctan.org/pkg/pdfpages?lang=en">pdfpages</a>
+- To get your PDF file metadata such as Table of Contents and Author Name working properly use <a href="https://en.wikibooks.org/wiki/LaTeX/Hyperlinks">hyperref</a></p>
+
+<h2 id="languages-other-than-english">Languages other than English</h2>
+
+<p>I used babel together with XeLaTex to get UTF-8 unicode characters working. XeLaTeX is unicode aware so this should work properly without having to use inputenc.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        
+
+<div id="social">
+    
+    <a class="symbol" href="mailto:gh@brianchristie.com">
+        <img src="/icons/email-square.svg">
+    </a>
+    
+    <a class="symbol" href="https://github.com/brc007">
+        <img src="/icons/github-square.svg">
+    </a>
+    
+    <a class="symbol" href="https://twitter.com/theBrc007">
+        <img src="/icons/twitter-square.svg">
+    </a>
+    
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2017 <i class="fa fa-heart" aria-hidden="true"></i> Brian Christie
+    
+    </p>
+</footer>
+
+        </section>
+
+        
+<script src="http://brianchristie.com/js/jquery-2.2.4.min.js"></script>
+<script src="http://brianchristie.com/js/main.js"></script>
+<script src="http://brianchristie.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+    </body>
+</html>

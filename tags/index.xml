@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Brian&#39;s Bytes</title>
+    <link>http://brianchristie.com/tags/</link>
+    <description>Recent content in Tags on Brian&#39;s Bytes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jun 2015 14:02:37 +0200</lastBuildDate>
+    
+	<atom:link href="http://brianchristie.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Latex</title>
+      <link>http://brianchristie.com/tags/latex/</link>
+      <pubDate>Fri, 05 May 2017 18:43:34 +0200</pubDate>
+      
+      <guid>http://brianchristie.com/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
